@@ -9,6 +9,7 @@ import { contentAreaComponent } from './contentArea/app.contentAreaComponent';
 import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './about/app.aboutComponent';
 import { ServicesComponent } from './services/services.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ServicesComponent } from './services/services.component';
     			footerComponent,
           aboutComponent,
           ServicesComponent,
+          TestComponent,
   ],
   imports: [
     BrowserModule,
