@@ -1,0 +1,275 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  padding: 154px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+
+h1{
+	font-size: 2.5em;
+	margin: 0;
+}
+
+p{
+	font-size:1.6em;
+	margin: 0;
+}
+
+section {
+  padding: 60px 0;
+}
+ 
+.inline{
+	display: inline-block;
+
+}
+
+#navbarResponsive ul li a.active{
+	background: #ff003f;
+	margin: 0 13px;
+	float: left;
+	font-size: 14px;
+	font-weight: 100;
+	color: #fff;
+}
+
+#navbarResponsive ul li a {
+	
+	font-size: 14px;
+	font-weight: 100;
+	display: block;
+	padding: 15px 12px;
+	color:#43455d;
+}
+
+.navbar {
+
+	margin: 0;
+	padding: 0;
+}
+
+.fa.fa-phone{
+    font-size: 10px;
+    border-radius: 50%;
+    border: 2px solid #ff003f;
+    color: white;
+    background: #ff003f;
+    transform: rotate(90deg);
+    padding: 6px;
+    margin: 0 10px;
+}
+.fa.fa-search{
+	margin: 0 50px;
+}
+
+.fa.fa-bars{
+	margin: 0 0px 0 0px;
+}
+
+.bg-primary{
+	background-color: #007bff!important;
+    background-image: url(https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg);
+    background-size: cover;
+    height: 550px;
+}
+
+.chart{
+
+    padding: 10px;
+    width: 150px;
+    border-radius: 50px;
+    margin: 50px 0;
+}
+
+.btn .fa.fa-basrs{
+	border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 8px;
+}
+
+.goAhead{
+	background:#123275;
+	height: 150px;
+	color: #fff;
+}
+.verticalLine{
+   border-left:1px solid #fff;
+   width: 50%;
+   margin: 30px 0px;
+   height: 80px;
+ }
+
+.goahead{
+
+	border-radius: 50px;
+	margin: 20px -45px;
+	width: 150px;
+	padding: 13px;
+	background: #ff003f;
+	border:#ff003f;
+
+	
+}
+
+.dropdowns{
+	margin: 0 50px;
+	background: silver;
+	border-radius: 50px;
+	padding: 10px;
+	width: 350px;
+}
+
+.horizontal
+{
+	height: 5px;
+	width: 40px;
+	background: #ff003f;
+	margin: 10px 0;
+
+}
+
+.lead 
+{
+	margin: 30px 0;
+	color: gray;
+	font-size: 1em;
+	line-height: 22px;
+}
+
+.know{
+	background: #fff;
+	border-radius: 50px;
+	color: lightgray;
+	border:1px solid lightgray;
+	font-size: 0.8em;
+	padding: 8px;
+	width: 110px;
+}
+.sub{
+	color: lightgray;
+	font-size: 0.9em;
+	margin: 30px 0;
+}
+.salmon{
+	color: #ff003f;
+}
+.heading{
+	color: #384894;
+	font-size: 1.8em;
+}
+.bg-light
+{
+	background-color:#fff!important;
+}
+
+/*  Service Box css to go in services component CSS */
+.servicesBox
+{
+
+	background: #f0f6fc;
+    
+    height: 215px;
+    margin: 0 4px;
+    text-align: center;
+    padding: 30px 10px; 
+}
+
+.light{
+
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 70px;
+}
+
+.bordered
+{
+	border: 2px solid darkgray;
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+.serviceText
+{
+	font-size: 14px;
+	color: gray;
+	font-weight: 300;
+
+}
+
+.box {
+	margin:10px 5px;
+	width: 31%;
+	
+}
+
+.visaNav
+{
+	width: 88%;
+	height: 12%;
+	background: #154cca;
+	margin: 60px 0 0 0;
+	padding: 0px 0px 0px 40px;
+}
+.white{
+	color: #fff;
+	position: relative;
+	top:20%;
+	font-size: 20px;
+
+}
+
+.navLinks{
+	width: 88%;
+    height: 20px;
+    background: #2251dd;
+    color: white;
+    margin: 1px 0;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.navLinks:hover{
+	font-weight: 500;
+    background: #154cca;
+    
+}
+
+.navText{
+	margin: -10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
