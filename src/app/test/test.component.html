@@ -1,24 +1,30 @@
-<div>
-    <div>Nmae: {{ github.login }}</div>
-     <div>Image: <img src="{{ github.avatar_url }}" width="100px"></div>
-     "id": {{ github.id }},
-      "node_id": {{ github.node_id }}
-      "avatar_url": {{ github.avatar_url }}
-      "gravatar_id": {{ github.gravatar_id }},
-      "url": <a href='{{ github.url }}'>url</a> ,
-      "html_url": <a href = '{{ github.html_url }}'>html</a>,
-      "followers_url": {{ github.followers_url }},
-      "following_url": {{ github.following_url }},
-      "gists_url": {{ github.gists_url }},
-      "starred_url": {{ github.starred_url }},
-      "subscriptions_url": {{ github.subscriptions_url }},
-      "organizations_url": {{ github.organizations_url }},
-      "repos_url": {{ github.repos_url }},
-      "events_url": {{ github.events_url }},
-      "received_events_url": {{ github.received_events_url }},
-      "type": {{ github.type }}
-      "site_admin":{{ github.site_admin }}
-      "score": {{ github.score }}
-</div>
+
+<a routerLink='/'>Home</a>
+<ul>
+ <li *ngIf="user">
+    <div>Nmae: {{ user.login  }}   </div>
+     <div>Image: <img src="{{ user.avatar_url }}" width="100px"></div>
+     "id": {{ user.id }},
+      "node_id": {{ user.node_id }}
+      "avatar_url": {{ user.avatar_url }}
+      "gravatar_id": {{ user.gravatar_id }},
+      "url": <a href='{{ user.url }}'>url</a> ,
+      "html_url": <a href = '{{ user.html_url }}'>html</a>,
+      "followers_url": {{ user.followers_url }},
+      "following_url": {{ user.following_url }},
+      "gists_url": {{ user.gists_url }},
+      "starred_url": {{ user.starred_url }},
+      "subscriptions_url": {{ user.subscriptions_url }},
+      "organizations_url": {{ user.organizations_url }},
+      "repos_url": {{ user.repos_url }},
+      "events_url": {{ user.events_url }},
+      "received_events_url": {{ user.received_events_url }},
+      "type": {{ user.type }}
+      "site_admin":{{ user.site_admin }}
+      "score": {{ user.score }}
+      
+      </li>
+ 
+</ul>
 
 

@@ -1,1 +1,12 @@
-<h1>Service/Hokme</h1>
+<a routerLink='/profiles'>All Profiles</a>
+
+<ul>
+ <li (click)="onSelect(git)" *ngFor="let git of profiles" [routerLink]="['/profiles', git.login]">
+    <div>Name: {{ git.login  }}</div>
+     <div>Image: <img src="{{ git.avatar_url }}" width="100px"></div>
+    
+      
+      </li>
+ 
+</ul>
+

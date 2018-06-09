@@ -5,7 +5,7 @@ export class Github
       id: number;
       node_id: string;
       avatar_url: string;
-      gravatar_id : number;
+      gravatar_id : string;
       url : string;
       html_url: string;
       followers_url: string;
@@ -18,7 +18,7 @@ export class Github
       events_url: string;
       received_events_url: string;
       type: string;
-      site_admin: string;
+      site_admin:boolean ;
       score: number;
     
 }

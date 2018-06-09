@@ -1,6 +1,7 @@
  import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { headerComponent } from './header/app.headerComponent';
@@ -10,6 +11,9 @@ import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './about/app.aboutComponent';
 import { ServicesComponent } from './services/services.component';
 import { TestComponent } from './test/test.component';
+import { TestService } from './test.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { UsersComponent } from './users/users.component'
 
 @NgModule({
   declarations: [
@@ -21,27 +25,14 @@ import { TestComponent } from './test/test.component';
           aboutComponent,
           ServicesComponent,
           TestComponent,
+          UsersComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-
-    {
-
-    path:'about',
-    component: aboutComponent
-    },
-
-    {
-
-    path: '',
-    component: contentAreaComponent
-
-    }
-
-    ])
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
