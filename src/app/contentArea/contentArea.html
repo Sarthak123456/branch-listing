@@ -1,7 +1,13 @@
 <a routerLink='/profiles'>All Profiles</a>
+<div>
+    
+    <label for="">search: </label>
+    <input type="text" [(ngModel)]='term' name=""/>
+    
+</div>
 
 <ul>
- <li (click)="onSelect(git)" *ngFor="let git of profiles" [routerLink]="['/profiles', git.login]">
+ <li (click)="onSelect(git)" *ngFor="let git of profiles | filter:term" [routerLink]="['/profiles', git.login]">
     <div>Name: {{ git.login  }}</div>
      <div>Image: <img src="{{ git.avatar_url }}" width="100px"></div>
     
@@ -9,4 +15,3 @@
       </li>
  
 </ul>
-

@@ -34,4 +34,11 @@ export class TestService {
       return Observable.throw(err.json() || 'Server Error')
     });
   }
+  
+  
+  // searchArtists(searchItem: string){
+  //   let url = this._url + searchItem
+  //   return this._http.get(this._url).map(res => res.json())
+    
+  // }
 }
