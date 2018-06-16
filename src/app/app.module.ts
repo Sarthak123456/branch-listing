@@ -21,14 +21,8 @@ import { FilterPipe } from './filter.pipe';
 @NgModule({
   declarations: [
     			AppComponent,
-    			headerComponent,
-    			navComponent,
     			contentAreaComponent,
-    			footerComponent,
-          aboutComponent,
-          ServicesComponent,
           TestComponent,
-          UsersComponent,
           FilterPipe,
   ],
   imports: [

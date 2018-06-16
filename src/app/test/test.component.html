@@ -4,24 +4,24 @@
  <li *ngIf="user">
     <div>Nmae: {{ user.login  }}   </div>
      <div>Image: <img src="{{ user.avatar_url }}" width="100px"></div>
-     "id": {{ user.id }},
-      "node_id": {{ user.node_id }}
-      "avatar_url": {{ user.avatar_url }}
-      "gravatar_id": {{ user.gravatar_id }},
-      "url": <a href='{{ user.url }}'>url</a> ,
-      "html_url": <a href = '{{ user.html_url }}'>html</a>,
-      "followers_url": {{ user.followers_url }},
-      "following_url": {{ user.following_url }},
-      "gists_url": {{ user.gists_url }},
-      "starred_url": {{ user.starred_url }},
-      "subscriptions_url": {{ user.subscriptions_url }},
-      "organizations_url": {{ user.organizations_url }},
-      "repos_url": {{ user.repos_url }},
-      "events_url": {{ user.events_url }},
-      "received_events_url": {{ user.received_events_url }},
-      "type": {{ user.type }}
-      "site_admin":{{ user.site_admin }}
-      "score": {{ user.score }}
+     <div>User ID: {{ user.id }}</div>
+      <div>"node_id": {{ user.node_id }}</div>
+     <div> "avatar_url": {{ user.avatar_url }}</div>
+      <div>"gravatar_id": {{ user.gravatar_id }},</div>
+      <div>"url": <a href='{{ user.url }}'>url</a> </div>
+ <div>     "html_url": <a href = '{{ user.html_url }}'>html</a></div>
+      <div>"followers_url":<a href='{{ user.followers_url }}'>Followers</a></div>
+<div>      "following_url":<a href= ' {{ user.following_url }}'>Following</a></div>
+     <div> "gists_url":<a href= ' {{ user.gists_url }}'>gists_url</a></div>
+      <div>"starred_url": <a href= ' {{ user.starred_url }}'>starred_url</a></div>
+     <div> "subscriptions_url": <a href= ' {{ user.subscriptions_url }}'>subscriptions_url</a></div>
+     <div> "organizations_url":<a href= ' {{ user.organizations_url }}'>organizations_url</a></div>
+     <div> "repos_url":<a href= ' {{ user.repos_url }}'>repos_url</a></div>
+    <div>  "events_url":<a href= ' {{ user.events_url }}'>events_url</a></div>
+     <div> "received_events_url": <a href= ' {{ user.received_events_url }}'>received_events_url</a></div>
+  <div>    "type": {{ user.type }}</div>
+ <div>     "site_admin":{{ user.site_admin }}</div>
+    <div>  "score": {{ user.score }}</div>
       
       </li>
  

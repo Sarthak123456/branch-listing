@@ -7,7 +7,7 @@
 </div>
 
 <ul>
- <li (click)="onSelect(git)" *ngFor="let git of profiles | filter:term" [routerLink]="['/profiles', git.login]">
+ <li (click)="onSelect(git)" *ngFor="let git of profile.items | filter:term" [routerLink]="['/profiles', git.login]">
     <div>Name: {{ git.login  }}</div>
      <div>Image: <img src="{{ git.avatar_url }}" width="100px"></div>
     

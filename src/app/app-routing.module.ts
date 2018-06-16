@@ -27,7 +27,7 @@ const routes: Routes= [
   {
     path:'',
     component: contentAreaComponent
-  }
+  },
   
   // {
   //   path:'profiles/:username',
@@ -36,8 +36,7 @@ const routes: Routes= [
     
   // }
   
-  
-  }
+
   
   
 @NgModule({

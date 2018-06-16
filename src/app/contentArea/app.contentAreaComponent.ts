@@ -15,10 +15,10 @@ import { FilterPipe } from '../filter.pipe'
   // styleUrls: ["./test.component.css"]
 })
 export class contentAreaComponent implements OnInit {
-  user:User;
-  profiles = [];
-  inputField: FormControl = new FormControl();
-  searchResults: any[]= [];
+ // user:User;
+  //profile = [];
+ // inputField: FormControl = new FormControl();
+  //searchResults: any[]= [];
 constructor(private testService: TestService,private router: Router) { }
 
 // onSelect(git){
@@ -28,7 +28,7 @@ constructor(private testService: TestService,private router: Router) { }
 
   ngOnInit() {
   this.testService.getProfiles()
-  .subscribe(resProfiles => this.profiles=resProfiles)
+  .subscribe(resProfiles => this.profile =resProfiles)
   
 //   this.inputField.valueChanges
 //   .subscribe(inputField => this.testService.searchArtists(inputField)
