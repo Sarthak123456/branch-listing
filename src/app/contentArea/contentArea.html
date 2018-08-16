@@ -1,17 +1,46 @@
-<a routerLink='/profiles'>All Profiles</a>
-<div>
-    
-    <label for="">search: </label>
-    <input type="text" [(ngModel)]='term' name=""/>
-    
-</div>
 
-<ul>
- <li (click)="onSelect(git)" *ngFor="let git of profile.items | filter:term" [routerLink]="['/profiles', git.login]">
-    <div>Name: {{ git.login  }}</div>
-     <div>Image: <img src="{{ git.avatar_url }}" width="100px"></div>
-    
+<h1 class='center'>Bank Branches</h1>
+
+<select  class='form-control half' (change)="onChange($event.target.value)">
+  <option>Select City</option>
+ <option>BANGALORE</option>
+ <option>MUMBAI</option>
+  <option>DELHI</option>
+  <option>HYDERABAD</option>
+  <option>LUCKNOW</option>
+  <option>PUNJAB</option>
+</select>
+
+
+    <label  for="">search: </label>
+    <input type="text" [(ngModel)]='term' name=""/>
+
+  
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ifsc</th>
+      <th scope="col">bank_id</th>
+      <th scope="col">bank_name</th>
+      <th scope="col">branch</th>
+      <th scope="col">address</th>
+      <th scope="col">district</th>
+      <th scope="col">state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let git of value | filter:term">
       
-      </li>
- 
-</ul>
+      <td>{{ git.ifsc }}</td>
+      <td >{{ git.bank_id  }}</td>
+      <td>{{ git.bank_name  }}</td>
+      <td>{{ git.branch  }}</td>
+      <td>{{ git.address  }}</td>
+      <td>{{ git.district  }}</td>
+      <td>{{ git.state  }}</td>
+    </tr>
+
+  </tbody>
+</table>
+

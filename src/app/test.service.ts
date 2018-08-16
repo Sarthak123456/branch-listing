@@ -16,13 +16,13 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class TestService {
   
-  private _url: string = 'https://api.github.com/search/users?q=tom'
-   private allurl: string = 'https://api.github.com/users'
+  // private _url: string = 'https://api.github.com/search/users?q=tom'
+  // private allurl: string = 'https://api.github.com/users'
    
   constructor(private _http:Http) { }
   
-  getProfiles(){
-    return this._http.get(this._url)
+  getProfiles(value){
+    return this._http.get('https://app.fyle.in/api/bank_branches?city='+value+'&offset=0&limit=50')
     .map((resp: Response)=> resp.json())
     .catch(err =>{
       return Observable.throw(err.json() || 'Server Error')

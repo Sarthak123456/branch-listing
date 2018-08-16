@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestComponent } from './test/test.component';
 import { contentAreaComponent } from './contentArea/app.contentAreaComponent';
 import { UsersComponent } from './users/users.component'
 
@@ -13,12 +12,6 @@ const routes: Routes= [
       path: '',
       component:  contentAreaComponent
       
-      },
-      
-      {
-        
-        path: ':username',
-        component: TestComponent
       }
       ]
   },
@@ -47,4 +40,4 @@ const routes: Routes= [
 
 })
 export class AppRoutingModule { }
-export const routingComponents= [contentAreaComponent, TestComponent]
+export const routingComponents= [contentAreaComponent]
